@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Pothuraju Dev - Daily Coding: Day 001</title>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
@@ -12,10 +12,27 @@
         <header>
             <h1>Welcome to Daily coding challenge</h1>
         </header>
-        <main>
-            <h2>Day 001</h2>
+        <main class="main">
+            <section id="question">
+                Given integers M and N, write a program that counts how many positive integer pairs (a, b) satisfy the
+                following conditions:
+                <br>
+                a + b = M
+                <br>
+                a XOR b = N
+            </section>
+            <section id="inputs">
+                <form onsubmit="event.preventDefault()">
+                    <input id="input1" type="number" placeholder="enter M value" required>
+                    <input id="input2" type="number" placeholder="enter N value" required>
+                    <button id="button1">Try</button>
+                    <button id="button2">Reset</button>
+                </form>
+            </section>
+            <section id="text"></section>
         </main>
     </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>
